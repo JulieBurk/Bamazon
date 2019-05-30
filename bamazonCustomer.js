@@ -72,7 +72,7 @@ function inquire_purchase() {
 
                 .then(function (user) { // D
                     //console.log(user.qty);
-                    do_purchase(user.qty,"cost")
+                    do_purchase(user.qty,"cost");
                     inquireMain();
                     } // D
                 );  // C
@@ -136,7 +136,7 @@ function do_purchase(qty,cost){
                 console.log("-----------------------------------------");
                 inquireMain();
             }
-        }) // end of query
+        }); // end of query
 }
 
 
